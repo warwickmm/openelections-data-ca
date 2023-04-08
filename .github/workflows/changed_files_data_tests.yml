@@ -1,4 +1,4 @@
-name: Changed Files Data Tests
+name: Data Tests (Changed Files)
 
 on:
   pull_request:
