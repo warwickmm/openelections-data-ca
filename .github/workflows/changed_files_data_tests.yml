@@ -59,7 +59,7 @@ jobs:
         name: pull_request_number
         path: ./pull_request_number.txt
 
-    - name: Upload errors
+    - name: Upload error logs
       uses: actions/upload-artifact@v3
       if: failure()
       with:
