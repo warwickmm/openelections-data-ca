@@ -44,11 +44,8 @@ jobs:
         files: |
           **/*.csv
 
-    - name: Print changed files
-      run: echo ${{ steps.changed-files.outputs.all_changed_files }}
-
     - name: Run data tests
-      run: python3 ${{ github.workspace }}/data_tests/run_tests.py --files ${{ steps.changed-files.outputs.all_changed_files }} --group-failures --log-file=${{ env.LOG_FILE }} ${{ matrix.test }} ${{ github.workspace }}/data
+      run: python3 ${{ github.workspace }}/data_tests/run_tests.py --files ${{ steps.changed-files.outputs.added_files }} --group-failures --log-file=${{ env.LOG_FILE }} ${{ matrix.test }} ${{ github.workspace }}/data
 
       # - name: Upload artifacts
       #   uses: actions/upload-artifact@v3
