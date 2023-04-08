@@ -48,9 +48,9 @@ jobs:
       if: "${{ steps.changed-files.outputs.added_files != '' }}"
       run: python3 ${{ github.workspace }}/data_tests/run_tests.py --files ${{ steps.changed-files.outputs.added_files }} --group-failures --log-file=${{ env.LOG_FILE }} ${{ matrix.test }} ${{ github.workspace }}/data
 
-      # - name: Upload artifacts
-      #   uses: actions/upload-artifact@v3
-      #   if: failure()
-      #   with:
-      #     name: ${{ matrix.test }}_full_logs
-      #     path: ${{ env.LOG_FILE }}
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      if: failure()
+      with:
+        name: new_files_${{ matrix.test }}_full_logs
+        path: ${{ env.LOG_FILE }}
