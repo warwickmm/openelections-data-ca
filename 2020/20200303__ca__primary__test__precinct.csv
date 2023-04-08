@@ -1,8 +1,9 @@
 ﻿county,precinct,office,district,party,candidate,votes,election_day,mail
-Tulare,102002 Exeter Memorial #3,President,,LIB,ADAM KOKESH,,,
-Tulare,102002 Exeter Memorial #3,President,,LIB,DAN BEHRMAN,,,
-Tulare,102002 Exeter Memorial #3,President,,LIB,ERIK CHASE GERHARDT,,,
-Tulare,102002 Exeter Memorial #3,President,,LIB,GEBY EVA ESPINOSA,,,
+Tulare,102002  Exeter Memorial #3,President,,LIB,ADAM KOKESH,,,
+Tulare ,102002 Exeter Memorial #3,President,,LIB,DAN BEHRMAN,,,
+Tulare,102002 Exeter Memorial #3,President,,LIB,ERIK CHASE GERHARDT,-1,,
+Tulare,102002 Exeter Memorial #3,President,,LIB,GEBY EVA ESPINOSA,0,,
+Tulare,102002 Exeter Memorial #3,President,,LIB,GEBY EVA ESPINOSA,0,,
 Tulare,102002 Exeter Memorial #3,President,,LIB,JACOB HORNBERGER,,,
 Tulare,102002 Exeter Memorial #3,President,,LIB,JAMES ORLANDO OGLE,,,
 Tulare,102002 Exeter Memorial #3,President,,LIB,JO JORGENSEN,,,
