@@ -61,5 +61,5 @@ jobs:
       uses: actions/upload-artifact@v3
       if: failure()
       with:
-        name: new_files_${{ matrix.test }}_full_logs
+        name: ${{ matrix.test }}_full_logs
         path: ${{ env.LOG_FILE }}
