@@ -48,7 +48,7 @@ jobs:
 
     - name: Run data tests
       if: "${{ steps.changed-files.outputs.added_files != '' }}"
-      run: python3 ${{ github.workspace }}/data_tests/run_tests.py --files ${{ steps.changed-files.outputs.added_files }} --group-failures --log-file=${{ env.LOG_FILE }} --truncate-log-file ${{ matrix.test }} ${{ github.workspace }}/data
+      run: python3 ${{ github.workspace }}/data_tests/run_tests.py --files ${{ steps.changed-files.outputs.added_files }} --group-failures --log-file=${{ env.LOG_FILE }} ${{ matrix.test }} ${{ github.workspace }}/data
 
     - name: Upload the pull request number
       uses: actions/upload-artifact@v3
